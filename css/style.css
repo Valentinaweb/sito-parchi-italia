@@ -393,22 +393,93 @@ footer > div {
   align-items: flex-start; 
   margin: 0;
   padding: 40;
-}
+  }
 
-.prova img {
+ .prova img {
   max-width: 250px; 
   height: auto;
   object-fit: cover;
   margin: 0;
   display: block;
-}
+ }
 
-
-  .introduzione1,
-  .introduzione2 {
-    font-size: 8px;
-    line-height: 1.3; 
+  .hero {
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+    margin-top: 0;  
+    padding-top: 0;
+    gap: 32px;
   }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text h2 {
+    font-size: 16px;
+  }
+
+  .intro-colonna {
+    align-items: center;
+  }
+
+  .card img {
+    max-width: 90%;
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: none;    
+    border-radius: 0;   
+  }
+
+  .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .card img {
+  width: 100%;
+  max-width: 700px;  
+  border-radius:0px;
+  object-fit: cover;
+  }
+
+  .hero1 {
+    text-align: left;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .hero-text1 h1 {
+    font-size: 22px;
+  }
+
+  .hero-text1 h2 {
+    font-size: 12px;
+  }
+
+  .prova img {
+    max-width: 300px;
+  }
+
+  .intro-colonna {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+  }
+
+ .introduzione1 h4,
+ .introduzione2 h4 {
+  color: rgb(4, 4, 4);
+  font-size: 10px;
+  line-height: 1.4;
+  }
+
 }
+
+
+
 
 
