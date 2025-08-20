@@ -80,6 +80,18 @@ header nav ul li a:hover {
   color: #3b3b3b;
 }
 
+.introduzione1 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.introduzione2 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #000000;
+}
+
 
 .card img {
   max-width: 320px;
@@ -289,17 +301,16 @@ footer > div {
 }
 
 
-/* ================== VERSIONE MOBILE REVISIONATA ================== */
-/* ===== RESPONSIVE MOBILE ===== */
+
 @media (max-width: 768px) {
 
-  /* CARD → 2 per riga */
+
   .content {
     padding: 30px 15px;
   }
 
   .content .card {
-    grid-template-columns: repeat(2, 1fr); /* due card per riga */
+     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     justify-items: center;
   }
@@ -312,51 +323,26 @@ footer > div {
     font-size: 14px;
   }
 
-  /* HERO più compatta */
-  .hero, .hero1 {
-    padding: 20px; /* stessa altezza percepita del header */
-    gap: 10px;
-  }
-
-  .hero-text, .hero-text1 {
-    padding: 0; 
-    max-width: 100%;
-  }
-
-  .hero-text h1, 
-  .hero-text1 h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-  }
-
-  .hero-text h2 {
-    font-size: 16px;
-  }
-
-  .prova img {
-    max-width: 100%;
-  }
-
-  /* RIDUZIONE TESTI GENERALI */
+  
   body {
     font-size: 14px;
     line-height: 1.4;
   }
 
   h1 {
-    font-size: 28px !important;
+    font-size: 28px;
   }
 
   h2 {
-    font-size: 18px !important;
+    font-size: 18px ;
   }
 
   h3 {
-    font-size: 16px !important;
+    font-size: 16px;
   }
 
   h4 {
-    font-size: 14px !important;
+    font-size: 14px;
   }
 
   p {
@@ -378,4 +364,51 @@ footer > div {
   .footer-bottom {
     font-size: 11px;
   }
+
+  .hero, .hero1 {
+    padding: 10px 15px;
+    gap: 10px;
+  }
+
+  .hero-text, .hero-text1 {
+    padding: 0; 
+    max-width: 100%;
+  }
+
+  .hero-text h1, 
+  .hero-text1 h1 {
+    font-size: 22px; 
+    margin-bottom: 10px;
+  }
+
+  .hero-text h2 {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .prova {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: flex-start; 
+  margin: 0;
+  padding: 40;
 }
+
+.prova img {
+  max-width: 250px; 
+  height: auto;
+  object-fit: cover;
+  margin: 0;
+  display: block;
+}
+
+
+  .introduzione1,
+  .introduzione2 {
+    font-size: 8px;
+    line-height: 1.3; 
+  }
+}
+
+
