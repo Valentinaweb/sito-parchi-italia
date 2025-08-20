@@ -300,6 +300,13 @@ footer > div {
   display: block;
 }
 
+.introduzione1 h4,
+.introduzione2 h4 {
+color: rgb(4, 4, 4);
+font-size: 18px;
+line-height: 1.4;
+}
+
 
 
 @media (max-width: 768px) {
