@@ -290,16 +290,16 @@ footer > div {
 
 
 /* ================== VERSIONE MOBILE REVISIONATA ================== */
-/* ===== RESPONSIVE MOBILE SOLO PER LE CARD + TESTI ===== */
+/* ===== RESPONSIVE MOBILE ===== */
 @media (max-width: 768px) {
 
-  /* CARD */
+  /* CARD → 2 per riga */
   .content {
     padding: 30px 15px;
   }
 
   .content .card {
-    grid-template-columns: 1fr; /* le card diventano 1 per riga */
+    grid-template-columns: repeat(2, 1fr); /* due card per riga */
     gap: 20px;
     justify-items: center;
   }
@@ -312,7 +312,32 @@ footer > div {
     font-size: 14px;
   }
 
-  /* RIDUZIONE TESTI PER MOBILE */
+  /* HERO più compatta */
+  .hero, .hero1 {
+    padding: 20px; /* stessa altezza percepita del header */
+    gap: 10px;
+  }
+
+  .hero-text, .hero-text1 {
+    padding: 0; 
+    max-width: 100%;
+  }
+
+  .hero-text h1, 
+  .hero-text1 h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .hero-text h2 {
+    font-size: 16px;
+  }
+
+  .prova img {
+    max-width: 100%;
+  }
+
+  /* RIDUZIONE TESTI GENERALI */
   body {
     font-size: 14px;
     line-height: 1.4;
@@ -354,4 +379,3 @@ footer > div {
     font-size: 11px;
   }
 }
-
