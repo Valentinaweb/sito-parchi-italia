@@ -80,6 +80,18 @@ header nav ul li a:hover {
   color: #3b3b3b;
 }
 
+.introduzione1 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.introduzione2 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #000000;
+}
+
 
 .card img {
   max-width: 320px;
@@ -239,22 +251,6 @@ footer > div {
     display: block;
 }
 
-
-@media (max-width: 768px) {
-    .hero-parchi {
-        padding: 40px 15px;
-    }
-
-    .hero-parchi > div {
-        padding: 20px 15px;
-    }
-
-    .hero-parchi h3 {
-        font-size: 24px; 
-    }
-}
-
-
 .hero1 {
   display: flex;
   justify-content: space-between;
@@ -305,23 +301,114 @@ footer > div {
 }
 
 
+
 @media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
+
+
+  .content {
+    padding: 30px 15px;
   }
 
-  .hero-text {
+  .content .card {
+     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .content .card img {
     max-width: 100%;
-    padding: 40px 20px;
-    text-align: center;
+  }
+
+  .content .card h3 {
+    font-size: 14px;
+  }
+
+  
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 18px ;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  header h5 {
+    font-size: 20px;
+  }
+
+  .footer-text h3 {
+    font-size: 18px;
+  }
+
+  .footer-text h4 {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    font-size: 11px;
+  }
+
+  .hero, .hero1 {
+    padding: 10px 15px;
+    gap: 10px;
+  }
+
+  .hero-text, .hero-text1 {
+    padding: 0; 
+    max-width: 100%;
+  }
+
+  .hero-text h1, 
+  .hero-text1 h1 {
+    font-size: 22px; 
+    margin-bottom: 10px;
+  }
+
+  .hero-text h2 {
+    font-size: 14px;
+    line-height: 1.4;
   }
 
   .prova {
-    justify-content: center;
-    margin-top: 20px;
-  }
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: flex-start; 
+  margin: 0;
+  padding: 40;
+}
 
-  .prova img {
-    max-width: 90%;
+.prova img {
+  max-width: 250px; 
+  height: auto;
+  object-fit: cover;
+  margin: 0;
+  display: block;
+}
+
+
+  .introduzione1,
+  .introduzione2 {
+    font-size: 8px;
+    line-height: 1.3; 
   }
 }
+
+
