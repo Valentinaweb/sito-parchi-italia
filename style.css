@@ -140,6 +140,8 @@ header nav ul li a:hover {
 }
 
 
+
+
 footer {
   display: flex;
   flex-direction: column;
@@ -307,6 +309,52 @@ font-size: 18px;
 line-height: 1.4;
 }
 
+.content {
+  padding: 60px 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.content .card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+.content .card > div {
+  text-align: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.content .card > div:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 12px 20px rgba(255, 255, 255, 0.2);
+}
+
+.content .card > div img {
+  max-width: 320px;
+  height: auto;
+  border-radius: 6px;
+  transition: transform 0.5s ease;
+}
+
+.content .card > div:hover img {
+  transform: scale(1.08);
+}
+
+.content .card > div h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.content .card > div:hover h3 {
+  color: #7a3b24;
+}
 
 
 @media (max-width: 768px) {
